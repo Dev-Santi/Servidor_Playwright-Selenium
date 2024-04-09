@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "Lexend";
+    src: url("./fonts/Lexend-VariableFont.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    --blue: #0d1890;
+    --purple: #66569f;
+    --turquoise: #08e1f6;
+
+    font-family: Lexend, sans-serif;
+}
+
+body {
+    background-color: #051022;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.balls {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    filter: blur(120px);
+}
+
+.blue_ball {
+    position: relative;
+    height: 15rem;
+    width: 35rem;
+    box-shadow: 0 0 110px 120px var(--blue);
+    border-radius: 30%;
+    background-color: var(--blue);
+    z-index: 150;
+}
+
+.purple_ball {
+    position: relative;
+    height: 10rem;
+    width: 30rem;
+    box-shadow: 0 0 110px 120px var(--purple);
+    border-radius: 50%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: var(--purple);
+    z-index: 100;
+}
+
+.turquoise_ball {
+    margin-bottom: -35rem;
+    height: 50rem;
+    width: 50rem;
+    box-shadow: 0 0 100px 120px var(--turquoise);
+    border-radius: 50%;
+    border-top-right-radius: 0;
+    background-color: var(--turquoise);
+}
