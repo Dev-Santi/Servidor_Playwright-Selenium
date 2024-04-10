@@ -21,7 +21,11 @@ body {
     background-color: #051022;
 }
 
-header {
+ul {
+    list-style-type: none;
+}
+
+main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
