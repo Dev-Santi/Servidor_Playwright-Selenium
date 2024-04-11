@@ -21,7 +21,8 @@
     font-size: 1.725rem;
 }
 
-.cards a {
+.cards a,
+.cards button {
     background-color: rgb(25, 110, 170);
     padding: 0.25rem;
     padding-block: 0.825rem;
@@ -30,8 +31,28 @@
     text-align: center;
     margin-block: 1.275rem;
     color: white;
+    transition: 60ms;
+}
+
+.cards button {
+    margin: 0 0 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.cards a:hover,
+.cards button:hover {
+    opacity: .7;
 }
 
 .cards ul {
-    
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cards ul li input {
+    padding: 0.15rem;
+    border-radius: 0.125rem;
+    border: none;
 }
