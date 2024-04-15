@@ -7,7 +7,7 @@
     color: white;
 }
 
-.cards div {
+.cards > div {
     display: flex;
     flex-direction: column;
 
@@ -16,43 +16,51 @@
     padding: 2rem;
 }
 
-.cards h2 {
+.cards > div h2 {
     text-transform: uppercase;
     font-size: 1.725rem;
 }
 
-.cards a,
-.cards button {
+.cards > div a,
+.cards > div button {
     background-color: rgb(25, 110, 170);
     padding: 0.25rem;
     padding-block: 0.825rem;
     border-radius: 0.325rem;
-    font-size: 1.225rem;
+    font-size: 1rem;
     text-align: center;
     margin-block: 1.275rem;
     color: white;
     transition: 60ms;
 }
 
-.cards button {
+.cards > div button {
     margin: 0 0 2rem;
     border: none;
     cursor: pointer;
 }
 
-.cards a:hover,
-.cards button:hover {
-    opacity: .7;
+.cards > div a:hover,
+.cards > div button:hover {
+    opacity: 0.7;
 }
 
-.cards ul {
+.cards > div ul {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.cards ul li input {
-    padding: 0.15rem;
-    border-radius: 0.125rem;
+.cards > div ul li {
+    font-size: 1rem;
+}
+
+.cards > div ul li input {
+    font-size: 1rem;
+    font-family: "Lexend";
     border: none;
+    background-color: var(--dark-blue);
+    color: white;
+    width: 8.5rem;
+    text-align: center;
 }
