@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="globals.css" />
         <link rel="stylesheet" href="./styles/cards.css" />
+        <link rel="stylesheet" href="./styles/scraping.css" />
         <title>Tests con Playwright</title>
     </head>
     <body>
@@ -19,33 +20,91 @@
             </nav>
         </header>
         <main>
-            <section class="cards">
-                <div>
-                    <h2>Test en mi portafolio</h2>
-                    <a href="https://www.santiagolarrosa.tech/" target="_blank"
-                        >https://www.santiagolarrosa.tech/</a
-                    >
-                    <button>Ejecutar</button>
+            <div class="tests">
+                <h2>Comprueba el título de cualquier sitio web</h2>
+                <section class="cards">
+                    <div>
+                        <form id="idFormularioPr">
+                            <label for="idLinkATestearPr"
+                                >Ingrese el Link de la página a testear</label
+                            >
+                            <input
+                                value="https://playwright.dev/"
+                                placeholder="Link:"
+                                id="idLinkATestearPr"
+                                type="url"
+                            />
+                            <input
+                                id="idTituloPaginaPr"
+                                placeholder="Ingrese el título de la página"
+                                type="text"
+                            />
+                            <button id="idBtnTestearPr" type="submit">Testear</button>
+                            <img src="./img/playwright.png" alt="" />
+                        </form>
+                        <h3 id="idResultadoPr"></h3>
+                    </div>
 
-                    <ul>
-                        <li>
-                            <span
-                                >¿El título es
-                                <input type="text" value="Santiago Larrosa" placeholder="valor" />?
-                            </span>
-                            <span> </span>
-                        </li>
-                    </ul>
-                </div>
+                    <div>
+                        <form id="idFormularioSn">
+                            <label for="idLinkATestearSn"
+                                >Ingrese el Link de la página a testear</label
+                            >
+                            <input
+                                value="https://www.selenium.dev/"
+                                placeholder="Link:"
+                                id="idLinkATestearSn"
+                                type="url"
+                            />
+                            <input
+                                id="idTituloPaginaSn"
+                                placeholder="Ingrese el título de la página"
+                                type="text"
+                            />
+                            <button id="idBtnTestearSn" type="submit">Testear</button>
+                            <img src="./img/selenium.png" alt="" />
+                        </form>
+                        <h3 id="idResultadoSn"></h3>
+                    </div>
+                </section>
+            </div>
 
-                <div></div>
-            </section>
+            <div class="scraping">
+                <h2>Web scraping</h2>
+                <section>
+                    <div>
+                        <a target="_blank" href="https://www.indumex.com/"
+                            >Cotizaciones obtenidas desde: https://www.indumex.com/</a
+                        >
 
-            <section class="balls">
-                <div class="blue_ball"></div>
-                <div class="purple_ball"></div>
-                <div class="turquoise_ball"></div>
-            </section>
+                        <div class="cotizaciones">
+                            <div>
+                                <h3>Dolar:</h3>
+                                <div>
+                                    <div id="idCompraDolar">Cargando...</div>
+                                    <div id="idVentaDolar">Cargando...</div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h3>Real:</h3>
+                                <div>
+                                    <div id="idCompraReal">Cargando...</div>
+                                    <div id="idVentaReal">Cargando...</div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h3>Peso Argentino:</h3>
+                                <div>
+                                    <div id="idCompraArg">Cargando...</div>
+                                    <div id="idVentaArg">Cargando...</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
 
         <!-- Scripts -->

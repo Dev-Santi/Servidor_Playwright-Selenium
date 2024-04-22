@@ -1,0 +1,26 @@
+.scraping {
+    margin-block: 2rem;
+    background-color: rgb(72, 101, 124);
+    padding: 1rem;
+    width: 100%;
+}
+
+.scraping section {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.scraping .cotizaciones {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 2rem;
+}
+
+.scraping .cotizaciones .scraping a {
+    color: white;
+}
+
+.scraping .cotizaciones a:visited {
+    color: white;
+}

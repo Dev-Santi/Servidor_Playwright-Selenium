@@ -1,9 +1,11 @@
 .cards {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 2rem;
-    margin: 0 auto;
     width: fit-content;
+    margin-top: 5rem;
+    margin: 0 auto;
     color: white;
 }
 
@@ -12,55 +14,62 @@
     flex-direction: column;
 
     border: 1px solid white;
-    border-radius: 2rem;
-    padding: 2rem;
-}
+    border-radius: 1.25rem;
+    padding: 1.25rem;
 
-.cards > div h2 {
-    text-transform: uppercase;
-    font-size: 1.725rem;
-}
-
-.cards > div a,
-.cards > div button {
-    background-color: rgb(25, 110, 170);
-    padding: 0.25rem;
-    padding-block: 0.825rem;
-    border-radius: 0.325rem;
-    font-size: 1rem;
     text-align: center;
-    margin-block: 1.275rem;
-    color: white;
-    transition: 60ms;
+
+    max-width: 30rem;
 }
 
-.cards > div button {
-    margin: 0 0 2rem;
+.cards > div > form {
+    color: black;
+}
+
+.cards > div > form img {
+    margin-top: 2rem;
+    width: 6rem;
+}
+
+.cards > div > form > input {
+    font-family: "Lexend";
+    margin-block: 1rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.25rem;
+    padding-block: 0.5rem;
+    border-radius: 0.325rem;
+    border: none;
+    color: black;
+}
+
+.cards > div > form > button {
+    font-family: "Lexend";
+    color: white;
+    background-color: rgb(59, 126, 104);
+    margin-top: -0.5rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.25rem;
+    padding-block: 0.5rem;
+    border-radius: 0.325rem;
     border: none;
     cursor: pointer;
+    transition: 150ms;
+    font-weight: 600;
 }
 
-.cards > div a:hover,
-.cards > div button:hover {
-    opacity: 0.7;
+.cards > div > form > button:hover {
+    background-color: rgb(83, 161, 135);
 }
 
-.cards > div ul {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.cards > div h3 {
+    margin-top: 2rem;
 }
 
-.cards > div ul li {
-    font-size: 1rem;
+.cards > div .correcto {
+    color: rgb(157, 201, 92);
 }
-
-.cards > div ul li input {
-    font-size: 1rem;
-    font-family: "Lexend";
-    border: none;
-    background-color: var(--dark-blue);
-    color: white;
-    width: 8.5rem;
-    text-align: center;
+.cards > div .incorrecto {
+    color: rgb(201, 114, 92);
 }

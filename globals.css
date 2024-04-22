@@ -26,14 +26,37 @@ ul {
     list-style-type: none;
 }
 
+img {
+    width: 100%;
+}
+
 main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+h2 {
+    margin: 2rem;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-block: 2rem;
+}
+
+nav .github_icon img {
+    width: 4rem;
+}
+
+.disabled {
+    display: none;
 }
