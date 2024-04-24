@@ -6,11 +6,7 @@ import snTestRouter from "./routes/sntest.js";
 
 const app = express();
 
-app.use(
-    cors({
-        origin: ["http://127.0.0.1:5500"],
-    })
-);
+app.use(cors());
 app.use("/prtest", prTestRouter);
 app.use("/sntest", snTestRouter);
 
