@@ -17,10 +17,12 @@
     gap: 2rem;
 }
 
-.scraping .cotizaciones .scraping a {
+.scraping a {
+    display: block;
+    margin-top: 2rem;
     color: white;
 }
 
-.scraping .cotizaciones a:visited {
+.scraping a:visited {
     color: white;
 }
